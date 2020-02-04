@@ -1,0 +1,186 @@
+*{
+    margin : 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+p{
+    font-size: 18px;
+}
+
+section{
+    padding: 30px 0;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.image{
+    min-width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/blur-book.jpg');
+    
+    height : 560px;
+    position: relative;
+}
+
+.headertext{
+    padding: 10px;
+    font-size: 1.8em;
+    font-family: sans-serif;
+    font-weight: 400;
+    position: absolute;
+    background-color: rgba(70, 34, 34, 0.5) ;
+    border-radius: 20px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header_tag{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.block{
+    padding: 30px 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+footer ul{
+    list-style-type: none;
+
+}
+
+ li{
+    text-decoration: none;
+}
+
+.container{
+    background-color: white;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+.innerblock{
+    position: relative;
+    margin: 20px 0;
+}
+
+span{
+    font-family: monospace;
+}
+
+.block  {
+    background-image: url('../images/books-bookshelf-education.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.block h4{
+    border-radius: 5px;
+    box-shadow: 0px 2px grey;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.block .innerblock  {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.toggle{
+    padding: 35px;
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
+.animation{
+    animation-name: motion;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+
+@keyframes motion {
+    100% {
+        left:0;
+    }
+}
+
+.final{
+    margin-top: 100px;
+}
+
+.magic{
+    opacity: 1;
+    display: block;
+}
+
+.footer{
+    text-align: center;
+    font-family: monospace;
+    font-size: 12px;
+    background-color: rgb(34, 32, 32);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.footer-items{
+    flex-grow: 1;
+    margin: 20px 0;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.footer div h5{
+    border-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media( max-width : 800px){
+    h1{
+        font-size: 35px;
+    }
+    .image{
+        height: 450px;
+    }
+    .container{
+        width: 85%;
+    }
+    .footer-items{
+        width: 50%;
+    }
+
+}
+@media( max-width : 560px){
+
+    h1{
+        font-size: 25px;
+    }
+    .container{
+        width: 95%;
+    }
+    .image{
+        height: 350px;
+    }
+    .footer-items{
+        width: 100%;
+    }
+}
